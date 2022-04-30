@@ -11,10 +11,14 @@ export class VehicleService {
 
   private apiUrl: string = environment.baseUrl;
 
+
+
 constructor(private http: HttpClient) { }
 
   getVehicles(): Observable<Vehicle[]>{
     return this.http.get<Vehicle[]>(this.apiUrl);
   }
+
+
 
 }

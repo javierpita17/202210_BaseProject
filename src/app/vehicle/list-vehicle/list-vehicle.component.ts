@@ -11,6 +11,10 @@ export class ListVehicleComponent implements OnInit {
 
   public vehicles: Array<Vehicle> = [];
 
+  public countRenault: number = 0;
+  public countChevrolet: number = 0;
+  public countNissan: number = 0;
+
   constructor(private vehicleService: VehicleService) { }
 
   ngOnInit() {
@@ -21,7 +25,15 @@ export class ListVehicleComponent implements OnInit {
   getVehicles():void{
     this.vehicleService.getVehicles().subscribe((vehicles) => {
       this.vehicles = vehicles;
-    })
+      this.countRenault = this.vehicles.filter(vehicle => vehicle.marca === 'Renault').length;
+      this.countChevrolet = this.vehicles.filter(vehicle => vehicle.marca === 'Chevrolet').length;
+      this.countNissan = this.vehicles.filter(vehicle => vehicle.marca === 'Nissan').length;
+    }
+
+    )
   }
+
+
+
 
 }
