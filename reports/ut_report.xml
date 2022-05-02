@@ -1,1 +1,12 @@
-<testExecutions version="1"/>
+<testExecutions version="1">
+  <file path="src/app/vehicle/list-vehicle/list-vehicle.component.spec.ts">
+    <testCase name="ListVehicleComponent should create" duration="118"/>
+  </file>
+  <file path="src/app/vehicle/vehicle.service.spec.ts">
+    <testCase name="Service: Vehicle should ..." duration="7"/>
+  </file>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should have as title 'base-project'" duration="27"/>
+    <testCase name="AppComponent should create the app" duration="13"/>
+  </file>
+</testExecutions>

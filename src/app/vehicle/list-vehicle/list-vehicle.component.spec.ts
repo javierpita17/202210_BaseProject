@@ -60,16 +60,14 @@ describe('ListVehicleComponent', () => {
     )
 
     fixture.detectChanges();
+    debug = fixture.debugElement;
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
 
-  it('Vehicle -> should have Vehicle id', () => {
-    const h4name = debug.query(By.css('h5'))
-    const h4 = h4name.nativeElement;
-    expect(h4.textContent).toEqual(component.vehicles[0].id);
-  });
+
+
 
 });
