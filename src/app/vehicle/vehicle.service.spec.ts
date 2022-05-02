@@ -1,12 +1,14 @@
 /* tslint:disable:no-unused-variable */
 
+import { HttpClientModule } from '@angular/common/http';
 import { TestBed, async, inject } from '@angular/core/testing';
 import { VehicleService } from './vehicle.service';
 
 describe('Service: Vehicle', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [VehicleService]
+      providers: [VehicleService],
+      imports: [HttpClientModule]
     });
   });
 

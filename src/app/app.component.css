@@ -1,3 +1,11 @@
 * [lang^=en] {
   color: green;
 }
+
+.main-div {
+  margin: 2rem 2rem;
+
+  justify-content: left;
+  align-items: center;
+
+}
